@@ -1,0 +1,34 @@
+{
+    "Provider": "LDAP+Local",
+    "ServiceId": null,
+    "ExtensionUrl": null,
+    "RejectUnregisteredUser": false,
+    "LdapParameters": [
+        {
+            "LdapSearchRoot": "LDAP:\/\/main-ad-hostname.yourdomain.local\/dc=yourdomain,dc=local",
+            "LdapSearchProperty": "sAMAccountName",
+            "NetBiosDomainName": "YOURDOMAIN",
+            "LdapTenantId": 1,
+            "LdapDeptCode": "department",
+            "LdapDeptCodePattern": null,
+            "LdapDeptName": "sn",
+            "LdapDeptNamePattern": null,
+            "LdapUserCode": "title",
+            "LdapUserCodePattern": null,
+            "LdapFirstName": "givenName",
+            "LdapFirstNamePattern": null,
+            "LdapLastName": "sn",
+            "LdapLastNamePattern": null,
+            "LdapMailAddress": "mail",
+            "LdapMailAddressPattern": null,
+            "LdapSyncPatterns": [
+                "(&(ObjectCategory=User)(ObjectClass=Person))"
+            ],
+            "LdapExcludeAccountDisabled": true,
+            "AutoDisable": true,
+            "AutoEnable": true,
+            "LdapSyncUser": "Administrator@yourdomain.local",
+            "LdapSyncPassword": "password"
+        }
+    ]
+}
